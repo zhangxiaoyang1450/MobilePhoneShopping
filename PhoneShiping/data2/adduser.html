@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>添加用户</title>
+    <!--新建adduser.html页面，提供用户输入表单：-->
+</head>
+<body>
+<form action="adduser.php" method="post">
+    <label>用户名：</label><input type="text" name="username"><br>
+    <label>密码：</label><input type="text" name="password" placeholder="输入六位密码"><br>
+    <label>性别</label><input type="text" name="sex"><br>
+    <label>年龄：</label><input type="text" name="age"><br>
+    <label>联系方式</label><input type="text" name="phonenumber"><br>
+    <label>工作</label><input type="text" name="major"><br>
+    <label>爱好</label><input type="text" name="love"><br>
+    <label>类型:</label><i style="color: red">(管理员可添加普通用户，其他类型将添加无效)</i><br><input type="text" name="style"><br>
+    <input type="submit" value="提交">
+</form>
+</body>
+</html>
+

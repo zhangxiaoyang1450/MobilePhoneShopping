@@ -1,0 +1,60 @@
+<?php
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册界面</title>
+    <style type="text/css">
+        div{
+            width: auto;
+            height: 738px;
+            display: flex;
+            align-items: center;
+            /*justify-content: center;  !*图片自适应*!*/
+            /*background: url(picture/pink.png) center center no-repeat;*/
+            /*background-size: cover;*/
+            /*-moz-background-size: cover;*/
+            /*-o-background-size: cover;*/
+            /*-webkit-background-size: cover;*/
+            /*padding-top: auto;*/
+        }
+        .form1{
+            width: 38%;
+            margin: 0 auto;
+            height: 88%;
+            top: 20%;
+        ;
+        }
+
+    </style>
+</head>
+<body>
+<div>
+<form action="register3.php" method="post" enctype="multipart/form-data" class="form1" target="_blank">
+    <h2>管理员注册系统</h2>
+    用 户 名：
+    <input type="text" name="username" size="20" maxlength="15"  />
+    <br/> <br/>
+    登录密码：
+    <input type="password" name="password" size="20" maxlength="15" />
+    <br/> <br/>
+    确认密码：
+    <input type="password" name="confirmPassword" size="20" maxlength="15" />
+    <br/> <br/>
+    选择性别：
+    <input name="sex" type="radio" value="M" checked />男
+    <input name="sex" type="radio" value="F" />女
+    <br/> <br/>
+    年龄：
+    <input type="number" name="age" size="5" maxlength="5" />
+    <br/> <br/>
+    联系方式：
+    <input type="number" name="phonenumber" size="20" maxlength="15" />
+    <br/> <br/>
+    <input type="submit" name="submit" value="注册按钮" />
+    <input type="reset" name="cancel" value="重新填写" />
+</form>
+</div>
+</body>
+</html>
+>

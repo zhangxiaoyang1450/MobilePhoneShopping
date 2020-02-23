@@ -1,0 +1,292 @@
+#body{
+    height:2000px;
+    /*background-color: #eee;*/
+}
+
+#header{
+    background: red;
+    height: 32px ;
+    color: #fff;
+    font-weight: 100;
+    font-size: 12px;
+}
+
+#login-contain{
+    /*与容器一样32*/
+    line-height: 32px;
+    display: inline;
+}
+#login-contain a{
+    margin-left: 20px;
+    color: #fff;
+}/*鼠标划入变色*/
+#login-contain a:hover{
+    color: yellow;
+}
+
+#header-menu{
+    float: right;
+    line-height: 32px;
+}/*水平布局*/
+#header-menu .menu{
+    float: left;
+    /*字距*/
+    padding: 0 14px;
+    position: relative;
+}
+#header-menu .menu a{
+    color: #fff;
+}
+#header-menu .menu-hd::after{
+    content: " ";
+    border: 3px solid transparent;
+    border-top-color: red;
+    position: absolute;
+    right: 5px;
+    top: 15px;
+    /*transform: rotate(180deg);*/
+    transform-origin: 3px 1.5px;
+    /*transition: transfrom .5s linear;*/
+    /*text-decoration: red;*/
+}
+#header-menu .menu-hd:hover{
+    background: #fff;
+
+}
+#header-menu .menu-hd:hover .sub-menu{
+    display: block;
+}
+#header-menu .menu-hd:hover>a{
+    color: red;
+    text-decoration: underline;
+}
+#header-menu .menu-hd:hover::after{
+    transition: transfrom .5s linear;
+    transform: rotate(180deg);
+}
+#header-menu .sub-menu a{
+    color: #999;
+}
+#header-menu .sub-menu li{
+    padding: 0 14px;
+}
+#header-menu .sub-menu{
+    border: 1px solid #cccccc;
+    border-top: 0;
+    position: absolute;
+    top: 32px;
+    left: 0;
+    width: 100px;
+    display: none;
+}
+#header-menu .sub-menu a:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+#search{
+    height: 200px;
+}
+#search img{
+    width: 211px;
+    height: 190px;
+    float: left;
+}
+#search-contain{
+    float: left;
+    margin-top: 70px;
+    margin-left: 100px;
+}
+#search-contain .search-list li{
+    float: left;
+}
+#search-contain .search-list a:hover{
+    color: red;
+}
+#search-contain .search-list{
+    color: #999999;
+    font-size: 18px;
+}
+#search-contain .search-input{
+    border: 2px solid #ff2736;
+}
+#search-contain .search-input input{
+    width: 490px;
+    height: 36px;
+    /*去除边框*/
+    outline: none;
+    border: 0;
+    text-indent: 10px;
+}
+#search-contain .search-input input::placeholder{
+    color: #cccccc;
+    font-size: 18px;
+}
+#search-contain .search-input button{
+    width: 132px;
+    height: 43px;
+    border: 0;
+    background: #ff0036;
+    font-size: 18px;
+    color: white;
+}
+#search-contain .search-list li{
+    padding: 5px 15px;
+    margin-top: 5px;
+    border-right: 1px solid #999999;
+}
+#search-contain .search-list li.last{
+    border-right: 0;
+}
+#search-contain .search-list li.first{
+    border-left: 0;
+}
+#search-contain .search-list li button{
+    background-color:white;
+    font-size: 18px;
+    border: #FFFFFF;
+}
+#search-contain .search-list li button:hover{
+    color: red;
+}
+
+#main-menu{
+    margin-left: 200px;
+    height: 40px;
+}
+#main-menu img{
+    /*height: 30px;*/
+    width: 100px;
+    float: left;
+    margin-right: 20px;
+}
+#main-menu ul{
+    float: left;
+    margin-top: 4px;
+}
+#main-menu li{
+    float: left;
+    padding-right: 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#banner li a{
+    display: block;
+    margin: 0 auto;
+    width: 1230px;
+}
+#banner li a img{
+    width: 100%;
+}
+
+#focus{
+    height: 83px;
+    width: 1230px;
+    border-bottom: 2px solid #000000;
+    margin: 0 auto;
+}
+#focus span{
+    float: left;
+    line-height:80px;
+    font-size: 50px;
+}
+#focus span.f2{
+    color: #999999;
+    font-size: 40px;
+    font-weight: 100;
+}
+
+
+#brand{
+    height: 400px;
+}
+#brand .brand-type{
+    float: left;
+    border: 3px solid white;
+    width: 2000px;
+}
+#brand .brand-type:hover{
+    border: 3px solid #ff2736;
+}
+#brand .brand-type img{
+    width: 100%;
+    height: 240px;
+    /*border-bottom: 1px solid #999999;*/
+}
+#brand .brand1{
+    width: 240px;
+    /*块儿左移*/
+    /*margin-left: 9px;*/
+    margin-top: 2px;
+    margin-bottom: 10px;
+}
+#brand .brand1 .bottom1{
+    line-height:60px;
+    font-size: 22px;
+    text-align: center;
+}
+#brand .brand1 .bottom2{
+    font-size: 21px;
+    text-align: center;
+    color: red;
+}
+#brand .title {
+    height: 55px;
+    background: white;
+    /*垂直居中*/
+    line-height: 55px;
+    font-size: 18px;
+    /*首行缩进控制*/
+    /*text-indent: 100px;*/
+    font-weight: 500;
+}
+#brand .title a{
+    /*no-repeat不平铺*/
+    background: url("../img/jiantou2.PNG") no-repeat center center;
+    background-size: 20px 20px;
+    display: block;
+    width: 58px;
+    height: 56px;
+    float: right;
+}
+#brand .title{
+    color:#000000;
+    text-align: center;
+}
+
+#float{
+    width: 55px;
+    height: 200px;
+    /*background: #999999;*/
+    position: fixed;
+    left: 20px;
+    top: 320px;
+    float: left;
+    font-size: 20px;
+    /*filter:alpha(opacity:50); opacity:0.5;*/
+}
+#float li{
+    font-family: 楷体;
+    /*background-color: #4a4a4a;*/
+    border: 3px solid #FFFFFF;
+    filter:alpha(opacity:50); opacity:0.5;
+}
+#float li button{
+    background-color:white;
+    font-size: 18px;
+    border: 1px solid black;
+    width: 50px;
+}
+#float li button:hover{
+    color: red;
+}
+#float #a{
+    background-color: red;
+    filter:alpha(opacity:50); opacity:1;
+}
+/*#float #a :hover{*/
+    /*background-color: green;*/
+/*}*/
+
+

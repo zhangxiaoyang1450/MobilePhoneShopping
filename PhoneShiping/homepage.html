@@ -1,0 +1,69 @@
+<!--登陆界面-->
+<?php
+    session_start();
+
+?>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link href="./login.css" type="text/css" rel="stylesheet">
+    <title>login</title>
+    <script type="text/javascript">
+<!--验证码-->
+        function changeCode(){
+            var img=document.getElementById('img');
+            img.setAttribute('src','index.php?r='+Math.random());
+        }
+        function MsgBox() //声明标识符
+        {
+            alert("用户名，密码输入错误，请重新输入"); //弹出对话框
+        }
+        function changeAction(action){
+            var oForm = document.getElementById("form");
+            oForm.action = action;
+        }
+    </script>
+</head>
+<body>
+<div class="wrap" id="wrap">
+    <form action="homepage.php" method="post" id="form" >
+    <div class="logGet">
+        <!-- 头部提示信息 -->
+        <div class="logD logDtip">
+            <p class="p1">正阳科技·手机销售</p>
+        </div>
+        <!-- 输入框 -->
+        <div class="lgD">
+            <img src="picture/logName.png" width="20" height="20" alt=""/>
+            <input type="text"
+                   placeholder="输入用户名" name="name"/>
+        </div>
+        <div class="lgD">
+            <img src="picture/logPwd.png" width="20" height="20" alt=""/>
+            <input type="password"
+                   placeholder="输入用户密码"  name="password"/>
+        </div>
+        <!--<div >-->
+            <!--<a><input type="reset" style="width: 100px; height: 40px;background-color: #ee7700;margin-right: 200px"-->
+                   <!--value="重置"></a>-->
+        <!--</div>-->
+        <!--验证码-->
+        <div class="lgE">
+        验证码: &nbsp;<img id="img" src="index.php?" onclick="changeCode()"/>
+        <a href="javascript:void(0)" onclick="changeCode()">看不清?</a>&nbsp;<br />
+        <input  style="width:100%; height: 42px;text-indent: 2.5rem;" name="code" placeholder="输入验证码"/><br />
+        </div>
+        <div class="logC">
+            <!--登陆跳转-->
+            <a ><button name="denglu" type="submit" onclick="changeAction('homepage.php')">登 录</button></a>
+            <!--注册跳转-->
+            <a ><button name= "zhuce" type="submit" onclick="changeAction('reg.php')">注 册</button></a>
+            <!--<a ><button name="chongzhi" type="reset">重置</button></a>-->
+        </div>
+    </div>
+    </form>
+</div>
+</body>
+</html>
+
+-

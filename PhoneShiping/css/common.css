@@ -1,0 +1,18 @@
+*{
+   /*边框为零*/
+    margin: 0;
+    padding: 0;
+}
+/*居中*/
+.wrapper{
+    width: 1230px;
+    margin: 0 auto;
+}
+a{
+    /*去除下划线*/
+    text-decoration: none;
+}
+li{
+    /*去除点*/
+    list-style: none;
+}

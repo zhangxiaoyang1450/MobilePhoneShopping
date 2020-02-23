@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>界面设置</title>
+    <style type="text/css">
+        div{
+            width: auto;
+            height: 738px;
+            display: flex;
+            align-items: center;
+            justify-content: center;  /*图片自适应*/
+            background: url(picture/6.jpg) center center no-repeat;
+            background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            -webkit-background-size: cover;
+            padding-top: auto;
+        }
+        .form1{
+            width: 24%;
+            margin:0 auto;
+        }
+
+    </style>
+</head>
+<body>
+<div>
+    <form action="ooo.php" method="post" class="form1">
+        <h3>输入一个信息（比如名称)</h3>
+        用户：<input type="text" name="name" size="10"/><br />
+        密码：<input type="password" name="password" size="10"/><br />
+        <h3>确认此项：（可复选）</h3>
+        <input type="checkbox" name="achecked"  value="1"/>
+        选A.老师。<br />
+        <input type="checkbox" name="bchecked"  value="2"/>
+        选B.学生。<br />
+        <input type="checkbox" name="cchecked"  value="3"/>
+        选C.医生。<br />
+        <hr />
+        <input type="submit" value="提交"/><br />
+
+    title鼠标放置出现显示内容<br />
+    <a href="http://baidu.com" target="_blank" title="baidu">百度</a>
+    <br />
+    <a href="https://www.taobao.com/" target="_blank" title="taobao">淘宝</a>
+
+    <span>换行标签</span><br />
+    span:内容标签<br />
+    </form>
+</div>
+
+</body>
+</html>

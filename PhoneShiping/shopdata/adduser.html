@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<style>
+    #u4 {
+        border-width:0px;
+        position:absolute;
+        left:369px;
+        top:156px;
+        width:123px;
+        height:28px;
+    }
+    #u4_input {
+        position:absolute;
+        left:0px;
+        top:0px;
+        width:123px;
+        height:28px;
+        font-family:'Arial Normal', 'Arial';
+        font-weight:400;
+        font-style:normal;
+        font-size:13px;
+        text-decoration:none;
+        color:#000000;
+    }
+    .ax_default {
+        font-family:'Arial Normal', 'Arial';
+        font-weight:400;
+        font-style:normal;
+        font-size:13px;
+        color:#333333;
+        text-align:center;
+        line-height:normal;
+    }
+    .droplist {
+        color:#000000;
+        text-align:left;
+    }
+</style>
+<!--<script>-->
+    <!--function submitForm(){-->
+        <!--var form = document.getElementById("myform");-->
+        <!--form.submit();-->
+    <!--}-->
+<!--</script>-->
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>添加用户</title>
+    <!--新建adduser.html页面，提供用户输入表单：-->
+</head>
+<body>
+<form action="adduser.php" method="post" id="myform">
+    <!--<label>用户ID：</label><input type="text" name="phone_id"><br>-->
+    <!--<div id="u4" class="ax_default droplist">-->
+        <!--<select id="u4_input">-->
+            <!--<option value="纯棉">纯棉</option>-->
+            <!--<option value="涤纶">涤纶</option>-->
+            <!--<option value="20%纯棉+80%涤纶">20%纯棉+80%涤纶</option>-->
+            <!--<option value="40%纯棉+60%涤纶">40%纯棉+60%涤纶</option>-->
+            <!--<option value="60%纯棉+40%涤纶">60%纯棉+40%涤纶</option>-->
+            <!--<option value="80%纯棉+20%涤纶">80%纯棉+20%涤纶</option>-->
+        <!--</select>-->
+
+    <!--</div>-->
+    <label>手机名称：</label><input type="text" name="phone_name"><br>
+    <label>简介：</label><input type="text" name="phone_title"><br>
+    <label>图片1</label><input type="text" name="phone_img1"><br>
+    <label>图片2</label><input type="text" name="phone_img2"><br>
+    <label>图片3</label><input type="text" name="phone_img3"><br>
+    <label>手机价格：</label><input type="text" name="phone_price"><br>
+    <label>套餐类型</label><input type="text" name="phone_style"><br>
+    <label>分辨率</label><input type="text" name="phone_screen"><br>
+    <label>手机描述</label><input type="text" name="phone_text"><br>
+    <label>手机cpu型号</label><input type="text" name="phone_cpu"><br>
+    <label>手机运行内存：</label><input type="text" name="phone_RAM">
+    <!--<select onchange="submitForm();" name="phone_ARM">-->
+        <!--<option value="3GB">3GB</option>-->
+        <!--<option value="4GB">4GB</option>-->
+        <!--<option value="8GB">8GB</option>-->
+        <!--<option value="16GB">16GB</option>-->
+    <!--</select>--><br>
+    <label>存储容量</label><input type="text" name="phone_save"><br>
+    <label>推荐度：</label><input type="text" name="phone_hot"><br>
+    <label>库存：</label><input type="text" name="phone_stock"><br>
+    <label>售出：</label><input type="text" name="phone_sell"><br>
+    <input type="submit" value="提交">
+</form>
+</body>
+</html>
